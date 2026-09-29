@@ -9,7 +9,7 @@ This project combines **Python, Scikit-learn, and Streamlit** to clean data, eng
 The objective is to help traders, investors, and financial institutions anticipate periods of heightened volatility for better risk management, portfolio allocation, and trading decisions.
 
 *Live App:
-https://your-app-name.streamlit.app](https://crypto-volatility-prediction-07.streamlit.app/
+https://crypto-volatility-prediction-07.streamlit.app/
 
 ---
 # Project Highlights
