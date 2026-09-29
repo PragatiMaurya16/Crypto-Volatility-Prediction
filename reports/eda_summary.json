@@ -1,0 +1,87 @@
+{
+  "cleaning": {
+    "rows_in": 40384,
+    "coins_in": 25,
+    "dropped_bad_key": 0,
+    "duplicates_removed": 40,
+    "nonpositive_open": 0,
+    "nonpositive_high": 0,
+    "nonpositive_low": 0,
+    "nonpositive_close": 0,
+    "ohlc_rows_repaired": 0,
+    "missing_cells_forward_filled": 270,
+    "rows_dropped_unfillable_gaps": 0,
+    "coins_dropped_short_history": 0,
+    "rows_out": 40464,
+    "coins_out": 25,
+    "date_min": "2018-01-01",
+    "date_max": "2022-12-31"
+  },
+  "per_coin_top_vol": {
+    "XNDR": 0.0694,
+    "GLDN": 0.0607,
+    "FLUX": 0.0589
+  },
+  "per_coin_low_vol": {
+    "LMNA": 0.0274,
+    "AURX": 0.0293,
+    "YLDS": 0.0301
+  },
+  "returns": {
+    "mean": -0.00019997318729020642,
+    "std": 0.04425848825871692,
+    "skew": 0.1306364890470435,
+    "excess_kurtosis": 15.749247955225393,
+    "min": -0.629027472236483,
+    "max": 0.8242280703470023,
+    "share_abs_gt_10pct": 0.03360617225945251
+  },
+  "market_vol": {
+    "peak_date": "2019-01-14",
+    "peak": 0.06978439818509048,
+    "median": 0.0365351478910616,
+    "min": 0.020042149821349532
+  },
+  "abs_ret_autocorr_lag1": 0.15413308327338596,
+  "abs_ret_autocorr_lag30": 0.015251257544769642,
+  "corr_with_target": {
+    "parkinson_14": 0.451,
+    "range_ma_7": 0.451,
+    "atr_pct_14": 0.436,
+    "vol_30": 0.414,
+    "vol_7": 0.412,
+    "bb_width_20": 0.325,
+    "abs_ret_1": 0.218,
+    "amihud_14": 0.179,
+    "liq_ratio": 0.054,
+    "log_volume": 0.046,
+    "market_vol_7": 0.033,
+    "volume_ratio_7": 0.011,
+    "ret_7": -0.001,
+    "rsi_14": -0.007,
+    "log_mcap": -0.02
+  },
+  "weekday_abs_ret": [
+    0.02987,
+    0.02996,
+    0.02977,
+    0.0298,
+    0.03048,
+    0.03023,
+    0.02967
+  ],
+  "target": {
+    "mean": 0.037100124188317,
+    "median": 0.03134063503100776,
+    "std": 0.023244732666589118,
+    "skew": 3.2845023228316372,
+    "p05": 0.014082003217657397,
+    "p95": 0.07787337391374734
+  },
+  "persistence_corr_vol7_target": 0.5101222965615625,
+  "n_rows": 40464,
+  "n_coins": 25,
+  "date_min": "2018-01-01",
+  "date_max": "2022-12-31",
+  "is_demo": true
+}

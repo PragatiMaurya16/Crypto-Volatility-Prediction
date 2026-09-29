@@ -1,0 +1,21 @@
+# Both themes are defined, so the viewer can switch with the menu (top right) > Settings > Theme.
+# "Use system setting" follows the operating system.
+[theme.light]
+primaryColor = "#2F5D8A"
+backgroundColor = "#F4F6F8"
+secondaryBackgroundColor = "#E9EDF1"
+textColor = "#1B2430"
+font = "sans serif"
+
+[theme.dark]
+primaryColor = "#7FAEDB"
+backgroundColor = "#141A21"
+secondaryBackgroundColor = "#1D252E"
+textColor = "#E6EAEE"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false

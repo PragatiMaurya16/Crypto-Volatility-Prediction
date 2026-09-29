@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/demo_crypto_prices.csv

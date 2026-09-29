@@ -1,0 +1,177 @@
+{
+  "model_name": "Random Forest",
+  "best_params": {
+    "Ridge": {
+      "alpha": 707.2114131472224
+    },
+    "Random Forest": {
+      "max_depth": 9,
+      "max_features": 0.2541168988591605,
+      "min_samples_leaf": 26
+    },
+    "Gradient Boosting": {
+      "l2_regularization": 0.008532678095658722,
+      "learning_rate": 0.02463975755279057,
+      "max_depth": 5,
+      "max_iter": 204,
+      "min_samples_leaf": 83
+    }
+  },
+  "features": [
+    "ret_1",
+    "abs_ret_1",
+    "ret_3",
+    "ret_7",
+    "ret_30",
+    "vol_3",
+    "vol_7",
+    "vol_14",
+    "vol_30",
+    "vol_90",
+    "vol_ratio_7_30",
+    "vol_ratio_3_14",
+    "downside_vol_14",
+    "range_hl",
+    "range_ma_7",
+    "range_ma_14",
+    "parkinson_14",
+    "garman_klass_14",
+    "atr_pct_7",
+    "atr_pct_14",
+    "bb_width_20",
+    "bb_pctb_20",
+    "sma_ratio_7",
+    "sma_ratio_30",
+    "ema_ratio_12_26",
+    "rsi_14",
+    "log_volume",
+    "volume_chg_1",
+    "volume_ratio_7",
+    "volume_ratio_30",
+    "volume_std_14",
+    "liq_ratio",
+    "liq_ratio_ma_7",
+    "liq_ratio_chg_7",
+    "amihud_14",
+    "log_mcap",
+    "log_age_days",
+    "dow_sin",
+    "dow_cos",
+    "market_vol_7",
+    "market_ret_7",
+    "rel_vol_7"
+  ],
+  "horizon_days": 7,
+  "regime_thresholds": [
+    0.02540624850653166,
+    0.0391247129301722
+  ],
+  "regime_labels": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "split": {
+    "train": [
+      "2018-04-01",
+      "2021-07-16",
+      24889
+    ],
+    "validation": [
+      "2021-07-24",
+      "2022-01-05",
+      4150
+    ],
+    "test": [
+      "2022-01-13",
+      "2022-12-24",
+      8650
+    ]
+  },
+  "cv_rmse": {
+    "Ridge": 0.019836944782784763,
+    "Random Forest": 0.019399316793804487,
+    "Gradient Boosting": 0.019518809629308027
+  },
+  "validation_metrics": {
+    "Ridge": {
+      "RMSE": 0.019738657039374018,
+      "MAE": 0.012942323604312382,
+      "R2": 0.18249166683330842
+    },
+    "Random Forest": {
+      "RMSE": 0.019487709469816074,
+      "MAE": 0.012892682707630826,
+      "R2": 0.20314632736498373
+    },
+    "Gradient Boosting": {
+      "RMSE": 0.0195942526326216,
+      "MAE": 0.013263207825312437,
+      "R2": 0.19440939587792483
+    },
+    "Naive (last 7 days)": {
+      "RMSE": 0.02324405851979307,
+      "MAE": 0.016435956526789707,
+      "R2": -0.1336549956967421
+    }
+  },
+  "test_metrics": {
+    "Ridge": {
+      "RMSE": 0.019890278851454155,
+      "MAE": 0.012847869839551202,
+      "R2": 0.15285262183353687
+    },
+    "Random Forest": {
+      "RMSE": 0.019543956360364427,
+      "MAE": 0.01273148339366695,
+      "R2": 0.18209625630222204
+    },
+    "Gradient Boosting": {
+      "RMSE": 0.019725323259223684,
+      "MAE": 0.012791096583079156,
+      "R2": 0.16684561209858728
+    },
+    "Naive (last 7 days)": {
+      "RMSE": 0.023543032733410352,
+      "MAE": 0.016073869458220234,
+      "R2": -0.18686696097431166
+    }
+  },
+  "regime_test": {
+    "accuracy": 0.4515606936416185,
+    "confusion": [
+      [
+        932,
+        1825,
+        160
+      ],
+      [
+        442,
+        2029,
+        417
+      ],
+      [
+        171,
+        1729,
+        945
+      ]
+    ]
+  },
+  "sample_coin": "AURX",
+  "n_coins": 25,
+  "is_demo": true,
+  "n_features": 42,
+  "top_features": [
+    "vol_90",
+    "range_ma_7",
+    "atr_pct_7",
+    "vol_14",
+    "vol_7",
+    "vol_30",
+    "vol_3",
+    "log_mcap",
+    "rel_vol_7",
+    "parkinson_14"
+  ],
+  "train_seconds": 295.3
+}
