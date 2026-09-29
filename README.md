@@ -209,14 +209,12 @@ Every feature uses only data available up to day *t*, so there is no look-ahead.
 
 Three models were tuned with forward-chaining cross-validation and compared with a naive baseline (next week's volatility equals last 7 days' volatility):
 
-| Model | RMSE | MAE | R² |
+| Model | RMSE | MAE | R2 |
 |---|---|---|---|
-| Ridge Regression | X.XXXX | X.XXXX | X.XX |
-| Random Forest | X.XXXX | X.XXXX | X.XX |
-| Gradient Boosting | X.XXXX | X.XXXX | X.XX |
-| Naive baseline (last 7 days) | X.XXXX | X.XXXX | X.XX |
-
-> Replace the values above with the results from `docs/FINAL_REPORT.md` after running the pipeline on the real dataset.
+| Random Forest | 0.0195 | 0.0127 | 0.1821 |
+| Gradient Boosting | 0.0197 | 0.0128 | 0.1668 |
+| Ridge | 0.0199 | 0.0128 | 0.1529 |
+| Naive (last 7 days) | 0.0235 | 0.0161 | -0.1869 |
 
 **How leakage is prevented:**
 
@@ -251,9 +249,6 @@ The interactive app includes:
 - Crypto returns have fat tails, so extreme moves are much more common than a normal distribution suggests.
 - Recent volatility is the strongest signal, and range-based measures add extra information.
 - Coins tend to become volatile together, so market-wide context improves forecasts.
-- The best model beats the naive "same as last week" baseline by **XX%** in RMSE.
-
-> Update these numbers from your real results.
 
 ---
 
